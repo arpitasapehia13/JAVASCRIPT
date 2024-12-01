@@ -6,7 +6,7 @@ accountCity = "Punjab"
 // accountID = 2 -> this is not allowed
 accountEmail = "github@gmail.com"
 accountPassword = "23"
-accountCity = "Hyd"
+accountCity = "Hyd" //this is not recommended practice
 
 console.log(accountID);
 console.table([accountEmail,accountID,accountPassword,accountCity])
