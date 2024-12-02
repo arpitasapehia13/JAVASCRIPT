@@ -18,3 +18,7 @@ console.log(undefined >= 0);
 console.log(undefined > 0);
 
 
+//STRICT CHECK (===) this not only check value but also check the value
+console.log("2" === 2);
+
+
