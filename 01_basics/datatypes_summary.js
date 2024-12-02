@@ -30,3 +30,26 @@ console.log(typeof myFunction);
 console.log(typeof myObj);
 console.log(typeof registration);
 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//STACK(PRIMITIVE)  ,    HEAP(NON-PRIMITIVE)
+
+let fname = "arpita"
+let surname = fname
+surname = "sapehia"
+console.log(fname);
+console.log(surname);
+
+
+let user1 = {
+    email: "user@gmail.com",
+    upi : "user@ybl",
+}
+
+let user2 = user1
+
+user2.email = "user2@gmail.com"
+console.log(user1.email);
+console.log(user2.email);
