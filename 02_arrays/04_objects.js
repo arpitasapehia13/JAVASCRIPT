@@ -48,3 +48,26 @@ const users = [
     }
 ]
 console.log(users[1].email)
+
+
+//DE-STRUCTURE 
+
+const course = {
+    courseName : "JS",
+    price : "799",
+    courseInstructor : "Arpita"
+}
+
+const {courseInstructor : name1} = course;
+// console.log(courseInstructor);
+console.log(name1);
+
+// const navbar = ({company}) => {
+// }
+// navbar(company = "arpita")    -----> THIS IS PART OF REACT , {} IS IDENTIFICATION
+
+// {
+//     "name": "vishii", 
+//     "courseName": "kotlin",
+//     "price": "free"
+// }
