@@ -10,7 +10,7 @@
 
 const myNums = [1,2,3,4,5,6,7,8,9,10]
 
-//USING FILTER
+//USING FILTER METHOD
 const newNums = myNums.filter( (num) => num > 4 )
 /*const newNums = myNums.filter( (num) => {
     return num > 4 } )    ---------->>>>>          // Using curly braces {} starts a scope, so you need to explicitly return the value
@@ -45,4 +45,56 @@ const editionDate = book.filter((bk1) => { return bk1.edition >= 2000})
 console.log(userBooks);
 console.log(editionDate);
 
+
+
+const myNumbers = [1,2,3,4,5,6,7,8,9,10]
+// const newNumber = myNumbers.map((num) => num + 10 )
+
+//CHAINING
+const newNumber = myNumbers
+                    .map((num) => num * 10)
+                    .map((num) => num + 1)
+                    .filter((num) => num >= 40)
+console.log(newNumber);
+
+
+//USING REDUCE METHOD
+const number = [1,2,3]
+const myTotal = number.reduce(function (accVal,currVal) {
+    console.log(`acc: ${accVal} and curr ${currVal}`);
+    
+    return accVal + currVal
+ } , 0)
+console.log(myTotal);
+
+
+
+const shoppingCart = [
+    {
+        itemName: "js course", 
+        price: 2999
+    },
+    {
+        itemName: "kotlin course", 
+        price: 1999
+    },
+    {
+        itemName: "python course", 
+        price: 999
+    },
+    {
+        itemName: "data science course", 
+        price: 12999
+    },
+]
+const priceToPay = shoppingCart.reduce((acc,item) => acc + item.price , 0 )
+console.log(priceToPay);
+
+
+
+
+
+ 
+
+ 
 
